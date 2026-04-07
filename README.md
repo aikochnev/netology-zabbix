@@ -55,7 +55,11 @@
 
 <img src = "img/02z.png" width = 100%>
 
-![02z.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/02z.png)`
+![02z.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/02z.png)
+
+<img src = "img/02z1.png" width = 100%>
+
+![02z1.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/02z1.png)`
 
 ---
 
