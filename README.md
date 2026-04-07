@@ -75,7 +75,9 @@ systemctl enable zabbix-agent
 
 <img src = "img/02z.png" width = 100%>
 
-<img src = "img/02z1.png" width = 100%>`
+<img src = "img/02z1.png" width = 100%>
+
+<img src = "img/02z2.png" width = 100%>`
 
 ---
 
