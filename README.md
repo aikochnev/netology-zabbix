@@ -31,14 +31,15 @@
 3. `Работа с репозиторием и отправка работы на github`
 
 
-`При необходимости прикрепитe сюда скриншоты`
+`При необходимости прикрепитe сюда скриншоты
 
 <img src = "img/zabbix.png" width = 100%>
 
 ![zabbix.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/zabbix.png)
 
 <img src = "img/01z.png" width = 100%>
-![01z.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/01z.png)
+
+![01z.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/01z.png)`
 
 ---
 
