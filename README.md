@@ -30,16 +30,27 @@
 2. `Создание репозитория Zabbix`
 3. `Работа с репозиторием и отправка работы на github`
 
+```
+Поле для вставки кода...
+
+wget https://repo.zabbix.com/zabbix/7.4/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.4+ubuntu22.04_all.deb
+dpkg -i zabbix-release_latest_7.4+ubuntu22.04_all.deb
+apt update
+apt install zabbix-server-pgsql zabbix-frontend-php php8.1-pgsql zabbix-apache-conf zabbix-sql-scripts
+sudo -u postgres createuser --pwprompt zabbix
+sudo -u postgres createdb -O zabbix zabbix
+zcat /usr/share/zabbix/sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+sudo nano /etc/zabbix/zabbix_server.conf
+   DBPassword=12345
+systemctl restart zabbix-server apache2
+systemctl enable zabbix-server apache2
+```
 
 `При необходимости прикрепитe сюда скриншоты
 
 <img src = "img/zabbix.png" width = 100%>
 
-![zabbix.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/zabbix.png)
-
-<img src = "img/01z.png" width = 100%>
-
-![01z.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/01z.png)`
+<img src = "img/01z.png" width = 100%>`
 
 ---
 
@@ -50,16 +61,21 @@
 1. `Zabbix Agent установлен на 192.168.1.233 - сервер`
 2. `Zabbix Agent установлен на 192.168.1.246 - рабочий пк`
 
+```
+Поле для вставки кода...
+wget https://repo.zabbix.com/zabbix/7.4/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.4+ubuntu24.04_all.deb
+dpkg -i zabbix-release_latest_7.4+ubuntu24.04_all.deb
+apt update
+apt install zabbix-agent
+systemctl restart zabbix-agent
+systemctl enable zabbix-agent
+```
 
 `При необходимости прикрепитe сюда скриншоты
 
 <img src = "img/02z.png" width = 100%>
 
-![02z.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/02z.png)
-
-<img src = "img/02z1.png" width = 100%>
-
-![02z1.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/02z1.png)`
+<img src = "img/02z1.png" width = 100%>`
 
 ---
 
@@ -73,8 +89,4 @@
 
 <img src = "img/03z.png" width = 100%>
 
-![03z.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/03z.png)
-
-<img src = "img/03z1.png" width = 100%>
-
-![03z1.png](https://github.com/aikochnev/netology-zabbix/tree/main/img/03z1.png)`
+<img src = "img/03z1.png" width = 100%>`
